@@ -1,0 +1,35 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__description {
+    text-align: center;
+    margin: 2.4rem 0 3.2rem;
+    max-inline-size: 30ch;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+    padding: 0 2rem;
+  }
+
+  @media (min-width: 768px) {
+    &__description {
+      max-inline-size: 45ch;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &__description {
+      max-inline-size: 60ch;
+    }
+  }
+}

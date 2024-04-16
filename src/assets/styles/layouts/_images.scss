@@ -1,0 +1,44 @@
+.images {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 15.1rem);
+  grid-auto-rows: 14.3rem;
+  justify-content: center;
+  gap: 2.4rem;
+  margin: 6.4rem 0;
+
+  & > li {
+    border-radius: 0.8rem;
+    background-color: #d8d8d8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  & > li:nth-child(1) {
+    background-image: url("../images/image-woman-in-videocall.webp");
+  }
+  & > li:nth-child(2) {
+    background-image: url("../images/image-women-videochatting.webp");
+  }
+  & > li:nth-child(3) {
+    background-image: url("../images/image-men-in-meeting.webp");
+  }
+  & > li:nth-child(4) {
+    background-image: url("../images/image-man-texting.webp");
+  }
+
+  @media (min-width: 768px) {
+    & {
+      grid-template-columns: repeat(4, 16.4rem);
+      grid-auto-rows: 15.6rem;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    & {
+      grid-template-columns: repeat(4, 25.5rem);
+      grid-auto-rows: 24.2rem;
+    }
+  }
+}

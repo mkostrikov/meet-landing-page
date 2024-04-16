@@ -1,0 +1,70 @@
+.button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  padding: 1.6rem 0;
+  border: none;
+  border-radius: 2.9rem;
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 1.62;
+  color: var(--btn-text-color);
+
+  &--primary {
+    background-color: var(--primary-color);
+  }
+
+  &--secondary {
+    background-color: var(--secondary-color);
+  }
+
+  &--medium {
+    inline-size: 19.3rem;
+  }
+
+  &--short {
+    inline-size: 13.9rem;
+  }
+
+  &--primary > span {
+    color: var(--hover-main-color);
+  }
+
+  &--secondary > span {
+    color: var(--hover-secondary-color);
+  }
+
+  @media (hover: hover) {
+    &--primary:hover {
+      background-color: var(--hover-main-color);
+    }
+
+    &--secondary:hover {
+      background-color: var(--hover-secondary-color);
+    }
+
+    &--primary:hover > span,
+    &--secondary:hover > span {
+      color: #fff;
+    }
+  }
+
+  @media (hover: none) {
+    &--primary:active {
+      background-color: var(--hover-main-color);
+    }
+
+    &--secondary:active {
+      background-color: var(--hover-secondary-color);
+    }
+
+    &--primary:active > span,
+    &--secondary:active > span {
+      color: #fff;
+    }
+  }
+}

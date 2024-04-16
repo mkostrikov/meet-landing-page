@@ -1,0 +1,41 @@
+.h1 {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: clamp(4rem, 3.2rem + 2.2535vi, 6.4rem);
+  line-height: 1.1;
+  color: var(--heading-primary-color);
+}
+
+.h2 {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 1.12;
+  color: var(--heading-primary-color);
+
+  &--color-secondary {
+    color: var(--heading-secondary-color);
+  }
+}
+
+.paragraph {
+  font-family: var(--medium-font);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 1.53rem + 0.1878vi, 1.8rem);
+  line-height: 1.62;
+  color: var(--paragraph-primary-color);
+
+  &--color-secondary {
+    color: var(--paragraph-secondary-color);
+  }
+}
+
+.lead {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 1.62;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--lead-color);
+}
